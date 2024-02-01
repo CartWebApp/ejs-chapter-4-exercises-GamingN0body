@@ -1,9 +1,17 @@
 function reverseArray(arr) {
-  // Add code.
+	let reverseArray = [];
+  	for (let a = arr.length; a > 0; a--){
+    	reverseArray.push(arr[a-1])
+    }
+	return reverseArray;  
 }
 
 function reverseArrayInPlace(arr) {
-  // Add code.
+	let arrayValue = [];
+  	for (let a = arr.length; a > 0; a--) {
+      
+    }
+	return arrayValue;
 }
 
 
