@@ -7,17 +7,14 @@ function reverseArray(arr) {
 }
 
 function reverseArrayInPlace(arr) {
-	let arrayValue = [];
-  	for (let a = arr.length; a > 0; a--) {
-      
-    }
-	return arrayValue;
+  let arrayValue = arr.length;
+  for (let a = 0; a < arrayValue/2; a++) {
+    let i = arr[a];
+    arr[a] = arr[arrayValue-a-1];
+    arr[arrayValue-a-1] = i;
+  }
+  return arrayValue;
 }
-
-
-
-
-
 
 // tests 
 console.log(reverseArray(["A", "B", "C"]));
