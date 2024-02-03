@@ -1,9 +1,15 @@
-function arrayToList(arr) {
-  // Add code.
+function arrayToList(array){
+  if(array.length > 0){
+  	return {value: array[0],
+  				rest: arrayToList(array.slice(1))}
+  }
+  else{
+    return null;
+  }
 }
 
 function listToArray(list, arr) {
-  // Add code.
+  let array = []
 }
 
 // tests
